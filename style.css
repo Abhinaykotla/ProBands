@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+    font: 5vh Lora;
+    padding: 3rem 7%;
+    background-color: rgb(0, 0, 0);
+}
+
+#navbar a {
+    color: rgb(175, 38, 38);
+    transition: all 0.3s;
+
+    &:hover {
+        color: rgba(255, 255, 255);
+        text-shadow: 0 0 100px #333;
+    }
+}
+
+canvas {
+    position: fixed;
+    z-index: -1;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    background: #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+/*
+.btn:hover {
+    background: var(--gradient);
+}
+*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 7%;
+    border-bottom: .1rem solid rgba(0, 0, 0, .1);
+    position: relative;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: bold;
+}
+
+header .logo span {
+    color: var(--blue);
+}
+
+header .navbar a {
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+header .navbar a:hover {
+    color: var(--blue);
+}
+
+#menu {
+    font-size: 2.5rem;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    cursor: pointer;
+    display: none;
+}
+
+/* cards css */
+
+.solialcards {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0%;
+    max-width: 1000px;
+}
+
+.card p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #f8f7f7;
+}
+
+.solialcards .card {
+    width: 200px;
+    height: 200px;
+    background: rgba(7, 0, 0, 0);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.solialcards .background {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.solialcards .logo {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1e1e1e;
+}
+
+.solialcards .logo .logo-svg {
+    fill: #1e1e1e;
+    width: 30px;
+    height: 30px;
+}
+
+.solialcards .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.solialcards .icon .svg {
+    fill: #1e1e1ec5;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.solialcards .box {
+    position: absolute;
+    padding: 10px;
+    text-align: right;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.389);
+    border-top: 2px solid white;
+    border-right: 1px solid white;
+    border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+    box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
+    transform-origin: bottom left;
+    transition: all 1s ease-in-out;
+}
+
+.solialcards .box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.solialcards .box:hover .svg {
+    fill: white;
+}
+
+.solialcards .box1 {
+    width: 70%;
+    height: 70%;
+    bottom: -50%;
+    left: -50%;
+}
+
+.solialcards .box1::before {
+    background: radial-gradient(circle at 30% 107%, #fd9a97 0%, #cc7d3d 30%, #ff53d4 60%, #ab51bd 90%);
+}
+
+.solialcards .box1:hover::before {
+    opacity: 1;
+}
+
+.solialcards .box1:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+}
+
+.solialcards .box2 {
+    width: 50%;
+    height: 50%;
+    bottom: -35%;
+    left: -35%;
+    transition-delay: 0.2s;
+}
+
+.solialcards .box2::before {
+    background: radial-gradient(circle at 30% 107%, #91e9ff 0%, #00acee 90%);
+}
+
+.solialcards .box2:hover::before {
+    opacity: 1;
+}
+
+.solialcards .box2:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+}
+
+.solialcards .box3 {
+    width: 30%;
+    height: 30%;
+    bottom: -20%;
+    left: -20%;
+    transition-delay: 0.4s;
+}
+
+.solialcards .box3::before {
+    background: radial-gradient(circle at 30% 107%, #969fff 0%, #b349ff 90%);
+}
+
+.solialcards .box3:hover::before {
+    opacity: 1;
+}
+
+.solialcards .box3:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+}
+
+.solialcards .box4 {
+    width: 10%;
+    height: 10%;
+    bottom: -5%;
+    left: -5%;
+    transition-delay: 0.6s;
+}
+
+.solialcards .card:hover {
+    transform: scale(1.1);
+}
+
+.solialcards .card:hover .box {
+    bottom: -1px;
+    left: -1px;
+}
+
+.solialcards .card:hover .logo {
+    transform: translate(0, 0);
+    bottom: 20px;
+    right: 20px;
+}
+
+
+
+/* media queries  */
+
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    body {
+        padding: 1.5rem;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+
+    #menu {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        border-bottom: .1rem solid rgba(0, 0, 0, .2);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a {
+        font-size: 2.5rem;
+        display: block;
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    .contact form .inputBox input {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:400px) {
+
+    html {
+        font-size: 50%;
+    }
+
+}
