@@ -119,6 +119,26 @@ header .navbar a {
     height: auto;
 }
 
+.bodycontainer {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.scroll {
+    white-space: nowrap;
+    margin: 0 2em;
+}
+
+.scroll div {
+    display: flex;
+    gap: 2em;
+}
+
+.scroll p {
+    display: flex;
+    gap: 2em;
+}
 
 #scrolling_text {
     cursor: pointer;
@@ -133,6 +153,38 @@ header .navbar a {
     font: normal 96px/120px NeuePlak-Black, -apple-system, BlinkMacSystemFont, Lato, Segoe UI, Verdana, Arial, sans-serif;
 }
 
+/*Scrooling effect*/
+
+.righttoleft {
+    animation: righttoleft 13s linear infinite;
+}
+
+@keyframes righttoleft {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-164%);
+    }
+}
+
+.lefttoright {
+    animation: lefttoright 13s linear infinite;
+}
+
+@keyframes lefttoright {
+    0% {
+        transform: translateX(-164%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+
 /* On hover texts */
 .main #scrolling_text #hiphop:hover {
     color: #ffffff;
@@ -141,6 +193,15 @@ header .navbar a {
     font: normal 96px/120px NeuePlak-Black, -apple-system, BlinkMacSystemFont, Lato, Segoe UI, Verdana, Arial, sans-serif;
     transition: all .8s ease-out;
 }
+
+.main #scrolling_text #hiphop1:hover {
+    color: #ffffff;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: bolder;
+    font: normal 96px/120px NeuePlak-Black, -apple-system, BlinkMacSystemFont, Lato, Segoe UI, Verdana, Arial, sans-serif;
+    transition: all .8s ease-out;
+}
+
 
 
 .main #scrolling_text #techno:hover {
