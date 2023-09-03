@@ -119,11 +119,6 @@ header .navbar a {
     height: auto;
 }
 
-.bodycontainer {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
 
 .scroll {
     white-space: nowrap;
@@ -141,15 +136,15 @@ header .navbar a {
 }
 
 #scrolling_text {
+    font-weight: 900;
     cursor: pointer;
     position: absolute;
-    top: 30%;
+    top: 40%;
     color: rgba(255, 255, 255, 0);
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
     -webkit-text-stroke: 2px #fff;
-    font-weight: bolder;
     font: normal 96px/120px NeuePlak-Black, -apple-system, BlinkMacSystemFont, Lato, Segoe UI, Verdana, Arial, sans-serif;
 }
 
@@ -194,16 +189,6 @@ header .navbar a {
     transition: all .8s ease-out;
 }
 
-.main #scrolling_text #hiphop1:hover {
-    color: #ffffff;
-    -webkit-text-stroke: 1px #fff;
-    font-weight: bolder;
-    font: normal 96px/120px NeuePlak-Black, -apple-system, BlinkMacSystemFont, Lato, Segoe UI, Verdana, Arial, sans-serif;
-    transition: all .8s ease-out;
-}
-
-
-
 .main #scrolling_text #techno:hover {
     color: #ffffff;
     -webkit-text-stroke: 1px #fff;
@@ -237,7 +222,7 @@ header .navbar a {
     transition: all .8s ease-out;
 }
 
-.main #scrolling_text #rock:hover {
+.main #scrolling_text #hiphop1:hover {
     color: #ffffff;
     -webkit-text-stroke: 1px #fff;
     font-weight: bolder;
@@ -245,7 +230,16 @@ header .navbar a {
     transition: all .8s ease-out;
 }
 
-.main #scrolling_text #rock:hover {
+.main #scrolling_text #techno1:hover {
+    color: #ffffff;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: bolder;
+    font: normal 96px/120px NeuePlak-Black, -apple-system, BlinkMacSystemFont, Lato, Segoe UI, Verdana, Arial, sans-serif;
+    transition: all .8s ease-out;
+
+}
+
+.main #scrolling_text #rock1:hover {
     color: #ffffff;
     -webkit-text-stroke: 1px #fff;
     font-weight: bolder;
@@ -253,7 +247,7 @@ header .navbar a {
     transition: all .8s ease-out;
 }
 
-.main #scrolling_text #rock:hover {
+.main #scrolling_text #electronic1:hover {
     color: #ffffff;
     -webkit-text-stroke: 1px #fff;
     font-weight: bolder;
@@ -261,23 +255,13 @@ header .navbar a {
     transition: all .8s ease-out;
 }
 
-.main #scrolling_text #rock:hover {
+.main #scrolling_text #dubstep1:hover {
     color: #ffffff;
     -webkit-text-stroke: 1px #fff;
     font-weight: bolder;
     font: normal 96px/120px NeuePlak-Black, -apple-system, BlinkMacSystemFont, Lato, Segoe UI, Verdana, Arial, sans-serif;
     transition: all .8s ease-out;
 }
-
-.main #scrolling_text #rock:hover {
-    color: #ffffff;
-    -webkit-text-stroke: 1px #fff;
-    font-weight: bolder;
-    font: normal 96px/120px NeuePlak-Black, -apple-system, BlinkMacSystemFont, Lato, Segoe UI, Verdana, Arial, sans-serif;
-    transition: all .8s ease-out;
-}
-
-
 
 /* social cards css */
 
