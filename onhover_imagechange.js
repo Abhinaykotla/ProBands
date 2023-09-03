@@ -11,8 +11,8 @@ document.getElementById('techno').addEventListener('mouseenter', () => {
     image.src = 'images/techno.png';
 });
 
-document.getElementById('rock').addEventListener('mouseenter', () => {
-    image.src = 'images/rock.png';
+document.getElementById('drums').addEventListener('mouseenter', () => {
+    image.src = 'images/drums.png';
 });
 
 document.getElementById('electronic').addEventListener('mouseenter', () => {
@@ -31,8 +31,8 @@ document.getElementById('techno1').addEventListener('mouseenter', () => {
     image.src = 'images/techno.png';
 });
 
-document.getElementById('rock1').addEventListener('mouseenter', () => {
-    image.src = 'images/rock.png';
+document.getElementById('drums1').addEventListener('mouseenter', () => {
+    image.src = 'images/drums.png';
 });
 
 document.getElementById('electronic1').addEventListener('mouseenter', () => {
@@ -41,4 +41,44 @@ document.getElementById('electronic1').addEventListener('mouseenter', () => {
 
 document.getElementById('dubstep1').addEventListener('mouseenter', () => {
     image.src = 'images/dubstep.png';
+});
+
+document.getElementById('bollywood').addEventListener('mouseenter', () => {
+    image.src = 'images/bollywood.png';
+});
+
+document.getElementById('tollywood').addEventListener('mouseenter', () => {
+    image.src = 'images/tollywood.png';
+});
+
+document.getElementById('teenmaar').addEventListener('mouseenter', () => {
+    image.src = 'images/teenmaar.png';
+});
+
+document.getElementById('tasha').addEventListener('mouseenter', () => {
+    image.src = 'images/tasha.png';
+});
+
+document.getElementById('folk').addEventListener('mouseenter', () => {
+    image.src = 'images/folk.png';
+});
+
+document.getElementById('bollywood1').addEventListener('mouseenter', () => {
+    image.src = 'images/bollywood.png';
+});
+
+document.getElementById('tollywood1').addEventListener('mouseenter', () => {
+    image.src = 'images/tollywood.png';
+});
+
+document.getElementById('teenmaar1').addEventListener('mouseenter', () => {
+    image.src = 'images/teenmaar.png';
+});
+
+document.getElementById('tasha1').addEventListener('mouseenter', () => {
+    image.src = 'images/tasha.png';
+});
+
+document.getElementById('folk1').addEventListener('mouseenter', () => {
+    image.src = 'images/folk.png';
 });
