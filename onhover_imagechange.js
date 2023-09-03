@@ -1,6 +1,7 @@
 // Get references to the image and text elements
 const image = document.getElementById('image');
 
+
 // Add hover event listeners to change the image
 document.getElementById('hiphop').addEventListener('mouseenter', () => {
     image.src = 'images/hiphop.png';
