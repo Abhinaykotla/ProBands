@@ -164,7 +164,7 @@ header .navbar a {
 /*Scrooling effect*/
 
 .righttoleft {
-    animation: righttoleft 20s linear infinite;
+    animation: righttoleft 15s linear infinite;
 }
 
 @keyframes righttoleft {
@@ -406,7 +406,7 @@ header .navbar a {
     padding: 1rem;
     margin: .7rem 0;
     font-size: 1.7rem;
-    border: .3rem solid rgba(255, 0, 0, 0.116);
+    border: .3rem solid rgba(255, 0, 0, 0.274);
     border-radius: .5rem;
     text-transform: none;
     color: #ffffff;
@@ -429,6 +429,49 @@ header .navbar a {
     resize: none;
 }
 
+/* DJ Profiles */
+.DJ-profiles {
+    padding: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.outerprofile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.profile {
+    background-color: #d2e7eb21;
+    border-radius: 3rem;
+    box-shadow: 0 1rem 5rem rgba(255, 255, 255, 0.219);
+}
+
+
+.profile h1 {
+
+    font-size: 2rem;
+    padding: 3rem 2rem 2rem 2rem;
+    color: #ffffffb2;
+}
+
+.profile img {
+    padding: 2rem 0rem 2rem 2rem;
+    flex-wrap: wrap;
+    left: 0;
+    width: 25%;
+    height: 25%;
+    border-radius: .5rem;
+}
+
+.profile p {
+    font-size: 2rem;
+    padding: 3rem;
+    color: #ffffff;
+}
 
 /* media queries  */
 
@@ -494,7 +537,4 @@ header .navbar a {
     html {
         font-size: 50%;
     }
-
-
-
 }
