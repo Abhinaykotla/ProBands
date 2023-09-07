@@ -149,6 +149,12 @@ header .navbar a {
     font-weight: 1000;
 }
 
+/* On hover texts */
+
+#scrolling_text .texts:hover {
+    color: #ffffff;
+}
+
 /*Scrooling effect*/
 
 .righttoleft {
@@ -181,15 +187,7 @@ header .navbar a {
 
 
 
-/* On hover texts */
 
-#scrolling_text .texts:hover {
-    color: #ffffff;
-    font-family: 'Phudu', cursive;
-    font-size: 70px;
-    font-weight: 1000;
-    transition: 1s;
-}
 
 
 /* social cards css */
