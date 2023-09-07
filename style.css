@@ -147,12 +147,18 @@ header .navbar a {
     font-family: 'Phudu', cursive;
     font-size: 70px;
     font-weight: 1000;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 /* On hover texts */
 
 #scrolling_text .texts:hover {
     color: #ffffff;
+    transition: 0.5s;
+    font-size: 130%;
 }
 
 /*Scrooling effect*/
@@ -190,7 +196,7 @@ header .navbar a {
 
 
 
-/* social cards css */
+/* social cards css 
 
 .solialcards {
     position: absolute;
