@@ -32,9 +32,31 @@
         </header>
     </div>
 
-    <div class="container">
-        <h1 style="color: aliceblue; font-size: medium;">This part of the website is still under construction</h1>
-    </div>
+    <section class="contact">
+        <div class="content">
+            <form action="https://formspree.io/f/mwkjoaeb" method="post">
+                <p>Book a party for life</p>
+                <div class="inputBox">
+                    <input for="Name" type="text" name="Name" placeholder="Your Name" , id=name required>
+
+                    <input for="Email" type="email" name="Email" placeholder="Email" , id=email required>
+
+                    <input for="PH_Number" type="number" name="PH_Number" placeholder="Phone Number" , id=phnum required>
+
+                    <input class="input-date" for="Date" type="date" name="Date" , id=date required>
+                </div>
+
+                <input type="text" name="Subject" placeholder="Subject" class="box" , id=subject required>
+
+                <textarea name="Description" placeholder="Describe your event" name="Description" id="description"
+                    cols="30" rows="10" required></textarea>
+
+                <input type="submit" class="btn" value="Send">
+
+            </form>
+        </div>
+    </section>
+
 
     <script type="text/javascript" color='255,0,0' opacity='1' zIndex="-2" count="100" src="background.js"></script>
 </body>
