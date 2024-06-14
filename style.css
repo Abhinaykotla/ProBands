@@ -30,6 +30,7 @@ body {
     margin: 0;
     flex-direction: column;
     background-color: #000000;
+    max-width: auto;
 }
 
 section {
