@@ -18,11 +18,12 @@
 <body>
     <div class="container">
         <header id='navbar'>
-            <!--<a href="index.html" class="logo"> <span style="font-size: 30px;"> Pro </span> <span
-                    style="color: aliceblue; font-size: 30px;"> Bands </span> </a>-->
             <div style="left: 0; display: flex; flex-wrap: wrap;">
                 <a href="index.html"></a> <img src="images/logo.png" width="130" height="70" alt="ProBands" /> </a>
             </div>
+
+            <a href="index.html" class="logo"> <span style="font-size: 30px;"> Pro </span> <span
+                    style="color: aliceblue; font-size: 30px;"> Bands </span> </a>
 
             <nav class="navbar">
                 <a href="index.html">Home</a>
@@ -46,9 +47,12 @@
 
                     <input class="input-date" for="Date" type="text" placeholder="Event date" name="Date" , id=date
                         required>
-                </div>
 
-                <input type="text" name="Subject" placeholder="Subject" class="box" , id=subject required>
+                    <input type="text" name="Subject" placeholder="Subject" class="box" , id=subject required>
+
+                    <input type="text" name="ref" placeholder="Referal (Auto populated from the QR codes)" class="box" ,
+                        id=ref disabled>
+                </div>
 
                 <textarea name="Description" placeholder="Describe Your event. Try including things like:
                 1.No of guests 
@@ -64,6 +68,21 @@
 
 
     <script type="text/javascript" color='255,0,0' opacity='1' zIndex="-2" count="100" src="background.js"></script>
+
+    <script>
+
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const myData = getQueryParam('refID');
+            if (myData) {
+                document.getElementById('ref').value = myData;
+            }
+        });
+    </script>
 </body>
 
 </html>
