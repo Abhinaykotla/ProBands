@@ -30,6 +30,7 @@ body {
     margin: 0;
     flex-direction: column;
     background-color: #000000;
+    max-width: auto;
 }
 
 section {
@@ -196,7 +197,7 @@ header .navbar a {
 
 
 
-/* social cards css 
+/* social cards css */
 
 .solialcards {
     position: absolute;
@@ -498,7 +499,7 @@ header .navbar a {
     }
 }
 
-/*
+
 @media (max-width:768px) {
 
     #menu {
@@ -530,7 +531,7 @@ header .navbar a {
         width: 100%;
     }
 
-}*/
+}
 
 @media (max-width:400px) {
 
